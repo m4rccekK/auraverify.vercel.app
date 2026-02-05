@@ -1,0 +1,12 @@
+
+[build]
+  # The command to run to build the site
+  command = "npm run build"
+  # The directory that contains the deploy-ready HTML/JS/CSS
+  publish = "dist"
+
+[[redirects]]
+  # Redirect all traffic to index.html for React Router compatibility
+  from = "/*"
+  to = "/index.html"
+  status = 200
